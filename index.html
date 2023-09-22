@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerin Pious</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div id="header"> 
+   <div class="container">
+    <nav><img src="images/Jerin (1)2.png" class="logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="header-text">
+        <h1>Hey,<br> I'm <span>Jerin</span> Pious</h1>
+    </div>
+   </div>
+</div>
+<!-----------------about------------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/IMG_20230430_234323_068.jpg"
+                width="20"
+                height="500">
+            </div>
+
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello, I am Jerin Pious, an aspiring computer science student 
+                    currently living in the city of Waterloo. Originally from India, I am currently exploring the world of computer science. Apart from that I find myself involved in taekwondo, video editing and music.</p>
+
+                <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+                <p class="tab-links"onclick="opentab('Eductaion')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>C/C++</span><br></li>
+                    <li><span>Assembly Language</span><br></li>
+                    <li><span>Python</span><br></li>
+                    <li><span>Adobe Xd</span><br></li>
+                    <li><span>Alight Motion</span><br></li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="Experience">
+                <ul>
+                    <li><span>2023-current</span><br>Taekwondo Instructor</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="Eductaion">
+                <ul>
+                    <li><span>Conestoga College</span><br>2023-2026<br>Bachelor of Computer Science(Honours)</li>
+                    <li><span>De Paul</span><br>2020-2022<br>High School Diploma</li>
+                </ul>
+            </div>
+                </div>
+        </div>
+    </div>
+</div>
+<!---------------services------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/abstract-colorful-audio-wave-in-circle-logo-sign-symbol-icon-vector.jpg"
+                width="315"
+                height="320">
+                <div class="layer">
+                    <h3>Wavelet</h3>
+                    <p>The program allows to separate the vocals and music from songs or the given audio files</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+
+}
+</script>
+</body>
+</html>
