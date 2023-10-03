@@ -282,6 +282,6 @@ form .btn2{
 /*-------------------css for small screens------------------*/
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url("Images/guillaume-le-louarn-uC21aXJ7yQs-unsplash.jpg");
+        background-image: url("Images/phone_bg.jpg");
     }
 }
