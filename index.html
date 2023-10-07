@@ -13,10 +13,10 @@
    <div class="container">
     <nav><img src="images/Jerin (1)2.png" class="logo">
         <ul id="sidemenu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
             <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
         </ul>
         <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -35,8 +35,8 @@
         <div class="row">
             <div class="about-col-1">
                 <img src="Images/IMG_20230430_234323_068.jpg"
-                width="20"
-                height="500">
+                width="28"
+                height="450">
             </div>
 
             <div class="about-col-2">
@@ -105,7 +105,7 @@
                 <p><i class="fa-solid fa-paper-plane"></i> jerinpious321@gmail.com</p>
                 <p><i class="fa-solid fa-phone"></i> (519)-503-9443</p>
                 <div class="social-icons">
-                    <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BvjnuVTzESPaS%2FA7yxpMBqQ%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/jerin-pious-59b331261/"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://www.instagram.com/___.jerry.__j/"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://github.com/jerinpious"><i class="fa-brands fa-github"></i></a>
                 </div>
@@ -144,12 +144,13 @@ function opentab(tabname){
 }
 </script>
 <script>
-    var sidemenu=document.getElementById("sidemenu")
+    var sidemenu=document.getElementById("sidemenu");
+
     function openmenu(){
         sidemenu.style.right="0";
     }
     function closemenu(){
-        sidemenu.style.right="-200";
+        sidemenu.style.right="-200px";
     }
 
 </script>
