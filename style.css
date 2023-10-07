@@ -280,8 +280,32 @@ form .btn2{
 }
 
 /*-------------------css for small screens------------------*/
+nav .fa-solid{
+    display: none;
+}
 @media only screen and (max-width: 600px){
     #header{
         background-image: url("Images/phone_bg.jpg");
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 60px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background-color: #66FCF1;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+
     }
 }
