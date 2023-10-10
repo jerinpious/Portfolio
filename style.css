@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #080808;
+    background-color: #fff;
     color: #fff;
 }
 html{
@@ -14,7 +14,7 @@ html{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/paul-volkmer-qVotvbsuM_c-unsplash.jpg);
+    background-image: url(images/Modern\ office\ table\ with\ keyboard\,\ glasses\,\ notebook\ on\ white\ background\ top\ view\ mock-up.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -36,7 +36,7 @@ nav ul li{
     margin: 10px 20px;
 }
 nav ul li a{
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -59,8 +59,13 @@ nav ul li a:hover::after{
     font-size: 70px;
 }
 .header-text h1{
+    color: #000;
     font-size: 85px;
     margin-top: 200px;
+}
+.header-text h6{
+    color: #000;
+    margin-top: 10px;
 }
 .header-text h1 span{
     color: #66FCF1;
@@ -88,7 +93,7 @@ nav ul li a:hover::after{
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color: #fff;
+    color:#000;
 }
 .tab-titles{
     display: flex;
@@ -100,13 +105,13 @@ nav ul li a:hover::after{
     font-weight: 600;
     cursor: pointer;
     position: relative;
-    color: #fff;
+    color: #3A3B3C;
 }
 .tab-links::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #66FCF1;
+    background: #274C77;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -114,14 +119,14 @@ nav ul li a:hover::after{
 }
 .tab-links.active-link::after{
     width: 100%;
-    color: #66FCF1;
+    color: #3A3B3C;
 }
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #9cf1ec;
+    color: #274C77;
     font-size: 20px;
 }
 .tab-contents{
@@ -153,7 +158,7 @@ nav ul li a:hover::after{
 .layer{
     width: 27.5%;
     height: 0 ;
-    background: linear-gradient(rgba(0,0,0,0.6),#66FCF1);
+    background: linear-gradient(rgba(0,0,0,0.6),#274C77);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -174,7 +179,7 @@ nav ul li a:hover::after{
 }
 .layer a{
     margin-top: 20px;
-    color: #9cf1ec;
+    color: #274C77;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -196,16 +201,17 @@ nav ul li a:hover::after{
     display: block;
     margin:50px auto;
     width: fit-content;
-    border: 1px solid #9cf1ec;
+    border: 1px solid #274C77;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #fff;
+    color: #000;
     transition: background 0.5s;
 }
 
 .btn:hover{
-    background: #66FCF1;
+    color: #fff;
+    background: #274C77;
 }
 
 /* -------------------contact-------------------*/
@@ -218,10 +224,11 @@ nav ul li a:hover::after{
 }
 
 .contact-left p{
+    color: #274C77;
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #66FCF1;
+    color: #274C77;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -240,13 +247,14 @@ nav ul li a:hover::after{
 }
 
 .social-icons a:hover{
-    color: #9cf1ec;
+    color: #274C77;
     transform: translateY(-5px);
 }
 
 .btn.btn2{
+    color: #fff;
     display: inline-block;
-    background: #66FCF1;
+    background: #274C77;
 }
 
 .contact-right form{
